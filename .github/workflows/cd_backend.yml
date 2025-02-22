@@ -30,4 +30,4 @@ jobs:
                   username: ubuntu
                   password: ${{ secrets.PRIVATE_SSH_KEY }}
                   port: ${{ 22 }}
-                  script: docker stop todo-backend && docker run -p 3001:3001 -d --name todo-backend vishw76/todo-app-backend:${{github.sha}}
+                  script: docker pull vishw76/todo-app-backend:${{github.sha}} && docker stop todo-backend && docker run -p 3001:3001 -d --name todo-backend vishw76/todo-app-backend:${{github.sha}}
