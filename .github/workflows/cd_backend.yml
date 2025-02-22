@@ -24,17 +24,4 @@ jobs:
                 push: true
                 tags: vishw76/todo-app-backend:${{github.sha}}
 
-    # ssh_into_machine:
-    #     name: ssh
-    #     runs-on: ubuntu-latest
-    #     steps:
-    #         - name: ssh with multiple command
-    #           uses: appleboy/ssh-action@v1.2.1
-    #           with:
-    #               host: ${{ secrets.HOST }}
-    #               username: ${{ secrets.USERNAME }}
-    #               key: ${{ secrets.KEY }}
-    #               port: ${{ secrets.PORT }}
-    #               script: |
-    #                   whoami
-    #                   ls -al
+ 
