@@ -1,4 +1,4 @@
-name: Backend deployment
+name: todo-app-backend-deployment
 on:
     push:
         branches:
